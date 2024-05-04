@@ -1,9 +1,7 @@
 const dotenv = require('dotenv');
 dotenv.config();
-// authController.insertAdmin();
 const express = require('express');
 const bodyParser = require('body-parser');
-// const usersRouter = require('./routes/user');
 const authRoutes = require("./routes/auth");
 const postRoutes = require("./routes/post");
 const app = express();

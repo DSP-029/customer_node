@@ -58,7 +58,8 @@ exports.deletePost = async (req, res) => {
       return res.status(404).json({ message: "Post not found" });
     }
     await deletedUser.destroy();
-    res.status(204).send('Customer deleted successfully');
+    res.json({ message: 'Customer deleted successfully' });
+    res.status(204).send();
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
